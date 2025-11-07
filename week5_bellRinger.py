@@ -1,27 +1,15 @@
-# Problem Set 1: Indexing and Slicing Strings
-# Basic Indexing:
-# Given the string magic = 'abracadabra',
-# a. Retrieve the 5th character.
-string_1 = "abracadabra"
-print("5th character:  " + string_1[5])
-# b. Retrieve the second to last character.
-print("2nd to last character: " + string_1[-2])
-# c. Find the first occurrence of the letter 'c'.
-substring = "c"
-first_occurance_index = string_1.find(substring)
-print(first_occurance_index)
-# Advanced Slicing:
-# Given the string alphabet = 'abcdefghijklmnopqrstuvwxyz',
-# a. Extract the letters 'hij'.
-string_2 = "abcdefghijklmnopqrstuvwxyz,"
-string_2 = string_2[7:10]
-print(string_2)
-# b. Extract every second letter starting from 'a' to 'm'.
-every_second_alphabet = "abcdefghijklmnopqrstuvwxyz,"[0:13:2]
-print(every_second_alphabet)
-# c. Reverse the entire string using slicing.
-reverse_alphabet = "abcdefghijklmnopqrstuvwxyz,"[::-1]
-print(reverse_alphabet)
+# refactoring means to 
+# restructure code without
+# changing its external behavior
+# this helps improve code readability
+# and maintainability
+from problem_set1 import problem_set1
+from advanced_slicing import advanced_slicing
+
+problem_set1()
+advanced_slicing()
+
+
 # Problem Set 2: Extracting Information
 # From Descriptions:
 # Extract the name of the famous personality from the quote "Ask not what your country can do for you — ask what you can do for your country. - John F. Kennedy"
